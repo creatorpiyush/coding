@@ -4,6 +4,7 @@ public class selectionsort {
 
     public static void main(String[] args) {
 
+        // we can take input from user too
         int[] arr = { 55, 44, 22, 33, 11 };
 
         int[] ans = selectionsort(arr);
