@@ -7,6 +7,8 @@ public class arraylist {
 
     public static void main(String[] args) {
 
+        // * unlike array there is no boundation of length
+
         ArrayList<Integer> list = new ArrayList<>();
 
         System.out.println(list); // return's empty list
