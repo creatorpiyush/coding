@@ -17,15 +17,21 @@ public class linearsearch {
         }
         int val = s.nextInt();
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == val) {
-                System.out.println(val + " found at : " + i + " index");
-                break;
-            } else {
-                System.out.println("value not found...");
-            }
+        if (linearsearch(arr, val) == -1) {
+            System.out.println(val + "not found...");
+        } else {
+            System.out.println(val + " found at " + linearsearch(arr, val) + " index");
         }
 
+    }
+
+    public static int linearsearch(int[] arr, int val) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val) {
+                return i;
+            }
+        }
+        return -1;
     }
 
 }
