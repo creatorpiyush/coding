@@ -16,7 +16,7 @@ public class waveprint {
                     System.out.print(arr[i][j] + " ");
                 }
             } else {
-                for (int j = arr[i].length - 1; j > 0; j--) {
+                for (int j = arr[i].length - 1; j >= 0; j--) {
                     System.out.print(arr[i][j] + " ");
                 }
             }
