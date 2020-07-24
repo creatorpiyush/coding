@@ -9,7 +9,7 @@ public class krotate {
         int k = 1;
 
         int num = n;
-        int nod = 0;
+        int nod = 0; // nod=> no. of digits
         while (num != 0) {
             nod++;
             num /= 10;
