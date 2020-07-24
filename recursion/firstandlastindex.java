@@ -6,7 +6,11 @@ public class firstandlastindex {
 
         int[] arr = { 1, 3, 4, 5, 3, 4, 5 };
         // System.out.println(firstindex(arr, 0, 3));
-        System.out.println(lastindex(arr, 0, 4));
+        // System.out.println(lastindex(arr, 0, 4));
+        int[] values = allindex(arr, 0, 3, 0);
+        for (int value : values) {
+            System.out.println(value);
+        }
 
     }
 
@@ -38,6 +42,27 @@ public class firstandlastindex {
                 return -1;
 
         }
+
+    }
+
+    public static int[] allindex(int[] arr, int i, int data, int count) {
+
+        if (i == arr.length) {
+            int[] br = new int[count];
+            return br;
+        }
+        int[] indices = null;
+        if (arr[i] == data) {
+            indices = allindex(arr, i + 1, data, count + 1);
+        } else {
+            indices = allindex(arr, i + 1, data, count);
+        }
+
+        if (arr[i] == data) {
+            indices[count] = i;
+        }
+
+        return indices;
 
     }
 
