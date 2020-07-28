@@ -35,9 +35,11 @@ public class StudentClient {
         students[250].setName("ABC");
         System.out.println(students[250].getName());
 
+        System.out.println("+++ A non static Function (without static) +++");
         students[250].ANonStaticFunction();
+        // Student.ANonStaticFunction(); // ! not possible to 
 
-        System.out.println("+++ Astatic Function (without static) +++");
+        System.out.println("+++ A static Function +++");
         students[250].AStaticFunction();
         Student.AStaticFunction();
         Student.AStaticFunction();
