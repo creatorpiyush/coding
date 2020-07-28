@@ -67,4 +67,17 @@ public class Student {
         this.rollNo = Student.NumOfStudents;
     }
 
+    // can access both static and non-static data members
+    public void ANonStaticFunction() {
+        System.out.println(this.name + " says hello to " + Student.NumOfStudents + " students.");
+    }
+
+    // can access only static data members
+    // can't use this
+    // can't use non-static data member
+    // No need to create object, can be called directly via class name.
+    public static void AStaticFunction() {
+        System.out.println(Student.NumOfStudents + " out of possible " + Student.MAX_STUDENTS);
+    }
+
 }

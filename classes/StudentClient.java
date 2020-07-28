@@ -35,6 +35,16 @@ public class StudentClient {
         students[250].setName("ABC");
         System.out.println(students[250].getName());
 
+        students[250].ANonStaticFunction();
+
+        System.out.println("+++ Astatic Function (without static) +++");
+        students[250].AStaticFunction();
+        Student.AStaticFunction();
+        Student.AStaticFunction();
+        //
+        students[250].SetUniformColor("Blue");
+        System.out.println(students[350].GetUniformColor());
+
     }
 
 }
