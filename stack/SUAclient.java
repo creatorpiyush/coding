@@ -15,7 +15,12 @@ public class SUAclient {
         }
         System.out.println("*************");
         stack.display();
-        System.out.println();
+
+        System.out.println("*************");
+
+        System.out.println(stack.pop());
+        System.out.println("*************");
+        stack.display();
 
     }
 
