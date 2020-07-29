@@ -52,6 +52,14 @@ public class stackusingArray {
 
     }
 
+    public int top() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("Stack is Empty...");
+        }
+        int rv = this.data[this.tos];
+        return rv;
+    }
+
     public void display() {
         for (int i = this.tos; i >= 0; i--) {
             System.out.print(this.data[i] + " => ");
