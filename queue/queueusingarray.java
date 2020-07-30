@@ -53,4 +53,12 @@ public class queueusingarray {
         return rv;
     }
 
+    public int front() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("Queue is Empty...");
+        }
+
+        return this.data[this.front];
+    }
+
 }
