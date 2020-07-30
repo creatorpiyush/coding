@@ -32,14 +32,25 @@ public class queueusingarray {
 
     public void enqueue(int element) throws Exception {
 
-        if (this.isEmpty()) {
-            throw new Exception("Queue is Empty...");
+        if (this.size() == this.data.length) {
+            throw new Exception("Queue is Full...");
         }
 
         int ai = (this.front + this.size) % this.data.length;
         this.data[ai] = element;
         this.size++;
 
+    }
+
+    public int dequque() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("Queue is Empty...");
+        }
+        int rv = this.data[this.front];
+        this.data[this.front] = 0;
+        this.front = (this.front + 1) % this.data.length;
+        this.size--;
+        return rv;
     }
 
 }
