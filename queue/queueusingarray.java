@@ -61,4 +61,14 @@ public class queueusingarray {
         return this.data[this.front];
     }
 
+    public void display() {
+
+        for (int i = 0; i < this.size; i++) {
+            int ai = (this.front + i) % this.data.length;
+            System.out.print(this.data[ai] + " => ");
+        }
+        System.out.println("End");
+
+    }
+
 }
