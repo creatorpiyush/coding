@@ -62,7 +62,7 @@ public class stackusingArray {
 
     public void display() {
         for (int i = this.tos; i >= 0; i--) {
-            System.out.print(this.data[i] + " => ");
+            System.out.print(this.data[i] + " , ");
         }
         System.out.println("END");
     }

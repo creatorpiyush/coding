@@ -7,6 +7,9 @@ public class quaclient {
         queueusingarray queue = new queueusingarray();
 
         System.out.println(queue.size());
+
+        queue.enqueue(10);
+        queue.display();
     }
 
 }
