@@ -22,7 +22,7 @@ public class quaclient {
         queue.display();
 
         System.out.println("***********");
-        System.out.println(queue.dequque());
+        System.out.println(queue.dequeue());
         queue.display();
 
         System.out.println("***********");
