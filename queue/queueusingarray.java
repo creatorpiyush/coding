@@ -42,7 +42,7 @@ public class queueusingarray {
 
     }
 
-    public int dequque() throws Exception {
+    public int dequeue() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("Queue is Empty...");
         }
