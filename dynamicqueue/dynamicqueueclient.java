@@ -20,6 +20,15 @@ public class dynamicqueueclient {
         queue.enqueue(80);
         queue.display();
 
+        // Queues.push(60);
+        // while (!queue.isEmpty()) {
+        // displayQueuesinfo(queue);
+        // queue.dequeue();
+        //
+        // }
+        // queue.dequeue();
+        // Queues.pop();
+
     }
 
     public static void displayQueuesinfo(queueusingarray queue) throws Exception {
