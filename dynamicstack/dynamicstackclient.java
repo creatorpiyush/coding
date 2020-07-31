@@ -13,6 +13,18 @@ public class dynamicstackclient {
             displayStackinfo(stack);
         }
 
+        for (int i = 6; i <= 10; i++) {
+            stack.push(i * 10);
+            displayStackinfo(stack);
+        }
+        stack.push(160);
+        while (!stack.isEmpty()) {
+            displayStackinfo(stack);
+            stack.pop();
+        }
+
+        stack.pop();
+
     }
 
     public static void displayStackinfo(stackusingArray stack) throws Exception {
