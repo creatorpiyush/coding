@@ -13,6 +13,13 @@ public class dynamicqueueclient {
             displayQueuesinfo(queue);
         }
 
+        queue.dequque();
+        queue.dequque();
+        queue.enqueue(60);
+        queue.enqueue(70);
+        queue.enqueue(80);
+        queue.display();
+
     }
 
     public static void displayQueuesinfo(queueusingarray queue) throws Exception {
