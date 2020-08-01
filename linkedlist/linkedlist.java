@@ -39,6 +39,17 @@ public class linkedlist {
         this.size++;
     }
 
+    public void addLast(int data) {
+        Node node = new Node(data, null);
+        if (this.isEmpty()) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.tail.next = node;
+            this.tail = node;
+        }
+    }
+
     public void display() {
         Node temp = this.head;
         while (temp != null) {

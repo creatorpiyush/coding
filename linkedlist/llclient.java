@@ -7,6 +7,9 @@ public class llclient {
         linkedlist ll = new linkedlist();
 
         ll.addFirst(10);
+        ll.addFirst(20);
+
+        ll.addLast(30);
 
         ll.display();
 
