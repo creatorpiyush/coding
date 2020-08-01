@@ -8,6 +8,8 @@ public class llclient {
 
         ll.addFirst(10);
 
+        ll.display();
+
     }
 
 }
