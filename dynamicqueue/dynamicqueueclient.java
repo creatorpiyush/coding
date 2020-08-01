@@ -13,19 +13,18 @@ public class dynamicqueueclient {
             displayQueuesinfo(queue);
         }
 
-        queue.dequque();
-        queue.dequque();
+        queue.dequeue();
+        queue.dequeue();
         queue.enqueue(60);
         queue.enqueue(70);
         queue.enqueue(80);
         queue.display();
 
-        // Queues.push(60);
-        // while (!queue.isEmpty()) {
-        // displayQueuesinfo(queue);
-        // queue.dequeue();
-        //
-        // }
+        while (!queue.isEmpty()) {
+        displayQueuesinfo(queue);
+        queue.dequeue();
+        
+        }
         // queue.dequeue();
         // Queues.pop();
 
