@@ -11,6 +11,8 @@ public class llclient {
 
         ll.addLast(30);
 
+        ll.addAt(2, 55);
+
         ll.display();
 
         System.out.println(ll.getFirst());
