@@ -50,6 +50,36 @@ public class linkedlist {
         }
     }
 
+    private Node getNodeAt(int index) throws Exception {
+        if (index < 0 || index >= this.size) {
+            throw new Exception("Invalid Index");
+        }
+
+        Node temp = this.head;
+        while (index-- < 0) {
+            temp = temp.next;
+        }
+
+        return temp;
+    }
+
+    public void addAt(int index, int data) throws Exception {
+        if (index < 0 || index > this.size) {
+            throw new Exception("Invalid Index");
+        }
+        if (index == 0)
+            this.addFirst(data);
+        else if (index == this.size)
+            this.addLast(data);
+        else {
+            Node temp = this.getNodeAt(index - 1);
+            Node node = new Node(data, temp.next);
+            temp.next = node;
+            this.size++;
+        }
+
+    }
+
     public int getFirst() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
