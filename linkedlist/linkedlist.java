@@ -58,6 +58,14 @@ public class linkedlist {
         return this.head.data;
     }
 
+    public int getLast() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is Empty");
+        }
+
+        return this.tail.data;
+    }
+
     public void display() {
         Node temp = this.head;
         while (temp != null) {

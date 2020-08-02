@@ -15,6 +15,8 @@ public class llclient {
 
         System.out.println(ll.getFirst());
 
+        System.out.println(ll.getLast());
+
     }
 
 }
