@@ -48,6 +48,7 @@ public class linkedlist {
             this.tail.next = node;
             this.tail = node;
         }
+        this.size++;
     }
 
     private Node getNodeAt(int index) throws Exception {
@@ -55,9 +56,11 @@ public class linkedlist {
             throw new Exception("Invalid Index");
         }
 
+        int counter = 0;
         Node temp = this.head;
-        while (index-- < 0) {
+        while (counter < index) {
             temp = temp.next;
+            counter++;
         }
 
         return temp;
@@ -94,6 +97,18 @@ public class linkedlist {
         }
 
         return this.tail.data;
+    }
+
+    public int getAt(int index) throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is Empty");
+        }
+        if (index < 0 || index >= this.size) {
+            throw new Exception("Invalid Index");
+        }
+
+        return this.getNodeAt(index).data;
+
     }
 
     public int removeFirst() throws Exception {
