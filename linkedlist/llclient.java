@@ -2,7 +2,7 @@ package linkedlist;
 
 public class llclient {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         linkedlist ll = new linkedlist();
 
@@ -12,6 +12,8 @@ public class llclient {
         ll.addLast(30);
 
         ll.display();
+
+        System.out.println(ll.getFirst());
 
     }
 
