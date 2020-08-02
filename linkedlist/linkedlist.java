@@ -66,6 +66,25 @@ public class linkedlist {
         return this.tail.data;
     }
 
+    public int removeFirst() throws Exception {
+
+        if (this.isEmpty()) {
+            throw new Exception("List is Empty");
+        }
+
+        Node rv = this.head;
+
+        if (this.size() == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = this.head.next;
+        }
+
+        this.size--;
+        return rv.data;
+    }
+
     public void display() {
         Node temp = this.head;
         while (temp != null) {
