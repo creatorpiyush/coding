@@ -35,4 +35,21 @@ public class reverseLL extends linkedlist {
         this.tail.next = null;
     }
 
+    public void reversePR() {
+        this.reversePR(this.head);
+
+        Node temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+        this.tail.next = null;
+    }
+
+    private void reversePR(Node node) {
+        if (this.tail == node) {
+            return;
+        }
+        reversePR(node.next);
+        node.next.next = node;
+    }
+
 }

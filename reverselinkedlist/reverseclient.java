@@ -21,6 +21,10 @@ public class reverseclient {
         ll.reversePI();
         ll.display();
 
+        System.out.println("***** reversePR *****");
+        ll.reversePR();
+        ll.display();
+
     }
 
 }
