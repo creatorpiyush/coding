@@ -38,6 +38,8 @@ public class llclient {
 
         System.out.println(ll.removeFirst());
         ll.display();
+        System.out.println(ll.removeLast());
+        ll.display();
 
     }
 
