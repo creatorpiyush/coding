@@ -19,4 +19,20 @@ public class reverseLL extends linkedlist {
 
     }
 
+    public void reversePI() {
+        Node prev = this.head;
+        Node curr = prev.next;
+        while (curr != null) {
+            Node tprev = prev;
+            Node tcurr = curr;
+            prev = curr;
+            curr = curr.next;
+            tcurr.next = tprev;
+        }
+        Node temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+        this.tail.next = null;
+    }
+
 }

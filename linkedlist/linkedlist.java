@@ -4,7 +4,7 @@ public class linkedlist {
 
     public class Node {
         public int data;
-        Node next;
+        public Node next;
 
         Node(int data, Node next) {
             this.data = data;
@@ -12,8 +12,8 @@ public class linkedlist {
         }
     }
 
-    Node head;
-    Node tail;
+    public Node head;
+    public Node tail;
     int size;
 
     public linkedlist() {

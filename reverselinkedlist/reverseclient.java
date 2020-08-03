@@ -17,6 +17,10 @@ public class reverseclient {
         ll.reverseDI();
         ll.display();
 
+        System.out.println("***** reversePI *****");
+        ll.reversePI();
+        ll.display();
+
     }
 
 }
