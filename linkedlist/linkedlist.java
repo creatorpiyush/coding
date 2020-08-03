@@ -2,8 +2,8 @@ package linkedlist;
 
 public class linkedlist {
 
-    private class Node {
-        int data;
+    public class Node {
+        public int data;
         Node next;
 
         Node(int data, Node next) {
@@ -51,7 +51,7 @@ public class linkedlist {
         this.size++;
     }
 
-    private Node getNodeAt(int index) throws Exception {
+    public Node getNodeAt(int index) throws Exception {
         if (index < 0 || index >= this.size) {
             throw new Exception("Invalid Index");
         }
