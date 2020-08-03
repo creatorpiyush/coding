@@ -149,6 +149,30 @@ public class linkedlist {
         return rv.data;
     }
 
+    public int removeAt(int index) throws Exception {
+
+        if (index < 0 || index >= this.size) {
+            throw new Exception("Invalid index");
+        }
+
+        if (this.isEmpty()) {
+            throw new Exception("List is Empty");
+        }
+
+        if (index == 0) {
+            return this.removeFirst();
+        } else if (index == this.size - 1) {
+            return this.removeLast();
+        } else {
+            Node temp = this.getNodeAt(index - 1);
+            Node rv = temp.next;
+            temp.next = temp.next.next;
+            this.size--;
+            return rv.data;
+        }
+
+    }
+
     public void display() {
         Node temp = this.head;
         while (temp != null) {

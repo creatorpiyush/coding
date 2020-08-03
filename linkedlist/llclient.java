@@ -40,6 +40,8 @@ public class llclient {
         ll.display();
         System.out.println(ll.removeLast());
         ll.display();
+        System.out.println(ll.removeAt(1));
+        ll.display();
 
     }
 
