@@ -24,10 +24,10 @@ public class BinaryTree {
 
     public BinaryTree() {
         Scanner s = new Scanner(System.in);
-        this.root = this.takeInpuNode(s, null, false);
+        this.root = this.takeInputNode(s, null, false);
     }
 
-    public Node takeInpuNode(Scanner s, Node parent, boolean isLeftOrRight) {
+    public Node takeInputNode(Scanner s, Node parent, boolean isLeftOrRight) {
 
         if (parent == null) {
             System.out.println("Enter the data for the root node :- ");
