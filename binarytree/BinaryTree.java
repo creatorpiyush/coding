@@ -46,13 +46,13 @@ public class BinaryTree {
         System.out.println("Do you have left child of " + node.data);
         boolean choice = s.nextBoolean();
         if (choice) {
-            node.left = this.takeInpuNode(s, node, true);
+            node.left = this.takeInputNode(s, node, true);
         }
 
         System.out.println("Do you have right child of " + node.data);
         choice = s.nextBoolean();
         if (choice) {
-            node.left = this.takeInpuNode(s, node, false);
+            node.left = this.takeInputNode(s, node, false);
         }
 
         return node;
