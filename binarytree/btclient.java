@@ -6,6 +6,8 @@ public class btclient {
 
         BinaryTree tree = new BinaryTree();
 
+        tree.display();
+
     }
 
 }
