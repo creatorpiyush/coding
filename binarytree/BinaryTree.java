@@ -87,4 +87,20 @@ public class BinaryTree {
 
     }
 
+    public int size() {
+        return this.size(this.root);
+    }
+
+    public int size(Node node) {
+        if (node == null) {
+            return 0;
+        }
+
+        int lsize = this.size(node.left);
+        int rsize = this.size(node.right);
+        int mysize = lsize + rsize + 1;
+        return mysize;
+
+    }
+
 }
