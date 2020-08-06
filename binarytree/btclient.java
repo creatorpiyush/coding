@@ -8,6 +8,8 @@ public class btclient {
 
         tree.display();
 
+        System.out.println(tree.size());
+
     }
 
 }
