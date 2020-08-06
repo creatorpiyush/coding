@@ -10,6 +10,8 @@ public class btclient {
 
         System.out.println(tree.size());
 
+        System.out.println(tree.height());
+
     }
 
 }

@@ -91,7 +91,7 @@ public class BinaryTree {
         return this.size(this.root);
     }
 
-    public int size(Node node) {
+    private int size(Node node) {
         if (node == null) {
             return 0;
         }
@@ -100,6 +100,23 @@ public class BinaryTree {
         int rsize = this.size(node.right);
         int mysize = lsize + rsize + 1;
         return mysize;
+
+    }
+
+    public int height() {
+        return this.height(this.root);
+    }
+
+    private int height(Node node) {
+
+        if (node == null) {
+            return -1;
+        }
+
+        int lheight = this.height(node.left);
+        int rheight = this.height(node.right);
+        int height = Math.max(lheight, rheight) + 1;
+        return height;
 
     }
 
