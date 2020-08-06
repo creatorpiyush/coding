@@ -24,10 +24,10 @@ public class BinaryTree {
 
     public BinaryTree() {
         Scanner s = new Scanner(System.in);
-        this.root = this.takeInputNode(s, null, false);
+        this.root = this.takeInput(s, null, false);
     }
 
-    public Node takeInputNode(Scanner s, Node parent, boolean isLeftOrRight) {
+    public Node takeInput(Scanner s, Node parent, boolean isLeftOrRight) {
 
         if (parent == null) {
             System.out.println("Enter the data for the root node :- ");
@@ -46,13 +46,13 @@ public class BinaryTree {
         System.out.println("Do you have left child of " + node.data);
         boolean choice = s.nextBoolean();
         if (choice) {
-            node.left = this.takeInputNode(s, node, true);
+            node.left = this.takeInput(s, node, true);
         }
 
         System.out.println("Do you have right child of " + node.data);
         choice = s.nextBoolean();
         if (choice) {
-            node.left = this.takeInputNode(s, node, false);
+            node.right = this.takeInput(s, node, false);
         }
 
         return node;
