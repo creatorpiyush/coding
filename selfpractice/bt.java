@@ -111,6 +111,20 @@ public class bt {
         return Math.max(node.data, Math.max(lmax, rmax));
     }
 
+    public int min() {
+        return this.min(this.root);
+    }
+
+    private int min(Node node) {
+        if (node == null) {
+            return Integer.MAX_VALUE;
+        }
+
+        int lmin = this.min(node.left);
+        int rmin = this.min(node.right);
+        return Math.min(node.data, Math.min(lmin, rmin));
+    }
+
     public int rootnodevalue() {
         return this.rootnodevalue(this.root);
     }

@@ -11,6 +11,9 @@ public class btclient {
         System.out.println(tree.size());
 
         System.out.println(tree.rootnodevalue());
+
+        System.out.println(tree.max());
+        System.out.println(tree.min());
     }
 
 }
