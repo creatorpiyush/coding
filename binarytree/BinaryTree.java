@@ -120,4 +120,32 @@ public class BinaryTree {
 
     }
 
+    public int max() {
+        return this.max(this.root);
+    }
+
+    private int max(Node node) {
+        if (node == null) {
+            return Integer.MIN_VALUE;
+        }
+
+        int lmax = this.max(node.left);
+        int rmax = this.max(node.right);
+        return Math.max(node.data, Math.max(lmax, rmax));
+    }
+
+    public int min() {
+        return this.min(this.root);
+    }
+
+    private int min(Node node) {
+        if (node == null) {
+            return Integer.MAX_VALUE;
+        }
+
+        int lmin = this.min(node.left);
+        int rmin = this.min(node.right);
+        return Math.min(node.data, Math.min(lmin, rmin));
+    }
+
 }

@@ -12,6 +12,10 @@ public class btclient {
 
         System.out.println(tree.height());
 
+        System.out.println(tree.max());
+
+        System.out.println(tree.min());
+
     }
 
 }
