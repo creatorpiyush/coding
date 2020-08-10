@@ -133,4 +133,18 @@ public class bt {
         return node.data;
     }
 
+    public int height() {
+        return this.height(this.root);
+    }
+
+    private int height(Node node) {
+        if (node == null) {
+            return -1;
+        }
+
+        int lheight = this.height(node.left);
+        int rheight = this.height(node.right);
+        return Math.max(lheight, rheight) + 1;
+    }
+
 }
