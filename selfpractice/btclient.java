@@ -7,6 +7,10 @@ public class btclient {
         bt tree = new bt();
 
         tree.display();
+
+        System.out.println(tree.size());
+
+        System.out.println(tree.rootnodevalue());
     }
 
 }

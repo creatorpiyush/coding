@@ -83,4 +83,40 @@ public class bt {
         }
     }
 
+    public int size() {
+        return this.size(this.root);
+    }
+
+    private int size(Node node) {
+        if (node == null) {
+            return 0;
+        }
+
+        int lsize = this.size(node.left);
+        int rsize = this.size(node.right);
+        return lsize + rsize + 1;
+    }
+
+    public int max() {
+        return this.max(this.root);
+    }
+
+    private int max(Node node) {
+
+        if (node == null) {
+            return Integer.MIN_VALUE;
+        }
+        int lmax = this.max(node.left);
+        int rmax = this.max(node.right);
+        return Math.max(node.data, Math.max(lmax, rmax));
+    }
+
+    public int rootnodevalue() {
+        return this.rootnodevalue(this.root);
+    }
+
+    private int rootnodevalue(Node node) {
+        return node.data;
+    }
+
 }
