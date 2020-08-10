@@ -165,6 +165,22 @@ public class bt {
         } else {
             return false;
         }
-
     }
+
+    public void mirror() {
+        this.mirror(this.root);
+    }
+
+    private void mirror(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        Node temp = node.left;
+        node.left = node.right;
+        node.right = temp;
+        this.mirror(node.left);
+        this.mirror(node.right);
+    }
+
 }

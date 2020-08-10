@@ -18,6 +18,9 @@ public class btclient {
         System.out.println(tree.height());
 
         System.out.println(tree.ispresent(5));
+
+        tree.mirror();
+        tree.display();
     }
 
 }
