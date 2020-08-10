@@ -148,4 +148,24 @@ public class BinaryTree {
         return Math.min(node.data, Math.min(lmin, rmin));
     }
 
+    public boolean ispresent(int data) {
+        return this.ispresent(data, this.root);
+    }
+
+    private boolean ispresent(int data, Node node) {
+        if (node == null) {
+            return false;
+        }
+
+        if (node.data == data) {
+            return true;
+        } else if (this.ispresent(data, node.left)) {
+            return true;
+        } else if (this.ispresent(data, node.right)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

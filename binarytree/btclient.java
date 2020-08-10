@@ -16,6 +16,8 @@ public class btclient {
 
         System.out.println(tree.min());
 
+        System.out.println(tree.ispresent(50));
+
     }
 
 }
