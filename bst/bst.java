@@ -84,4 +84,16 @@ public class bst {
 
     }
 
+    public int min() {
+        return this.min(this.root);
+    }
+
+    private int min(Node node) {
+        int min = node.data;
+        if (node.left != null) {
+            min = this.min(node.left);
+        }
+        return min;
+    }
+
 }

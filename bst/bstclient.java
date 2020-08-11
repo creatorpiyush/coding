@@ -13,7 +13,7 @@ public class bstclient {
         bst.display();
 
         System.out.println(bst.max());
-
+        System.out.println(bst.min());
     }
 
 }
