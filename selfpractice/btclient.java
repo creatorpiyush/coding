@@ -25,6 +25,8 @@ public class btclient {
         tree.preOrder();
         System.out.println();
         tree.inOrder();
+        System.out.println();
+        tree.postOrder();
     }
 
 }

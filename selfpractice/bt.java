@@ -209,4 +209,18 @@ public class bt {
         inOrder(node.right);
     }
 
+    public void postOrder() {
+        this.postOrder(this.root);
+    }
+
+    private void postOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.data + " ");
+    }
+
 }
