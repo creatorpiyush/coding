@@ -70,4 +70,18 @@ public class bst {
         }
     }
 
+    public int max() {
+        return this.max(this.root);
+    }
+
+    private int max(Node node) {
+
+        int max = node.data;
+        if (node.right != null) {
+            max = this.max(node.right);
+        }
+        return max;
+
+    }
+
 }
