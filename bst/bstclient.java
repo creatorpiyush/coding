@@ -9,11 +9,16 @@ public class bstclient {
         bst.add(10);
         bst.add(5);
         bst.add(15);
+        bst.add(2);
+        bst.add(6);
 
         bst.display();
 
         System.out.println(bst.max());
         System.out.println(bst.min());
+
+        bst.remove(10);
+        bst.display();
     }
 
 }
