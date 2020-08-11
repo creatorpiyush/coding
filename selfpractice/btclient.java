@@ -24,9 +24,16 @@ public class btclient {
 
         tree.preOrder();
         System.out.println();
+
         tree.inOrder();
         System.out.println();
+
         tree.postOrder();
+        System.out.println();
+
+        System.out.println(tree.isBST());
+
+        System.out.println(tree.diameter());
     }
 
 }
