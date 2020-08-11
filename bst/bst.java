@@ -130,4 +130,22 @@ public class bst {
         }
     }
 
+    public void rootToLeaf() {
+        this.rootToLeaf(this.root, "");
+    }
+
+    private void rootToLeaf(Node node, String osf) {
+        if (node == null) {
+            return;
+        }
+        osf = osf + node.data + ", ";
+        if (node.left == null && node.right == null) {
+            System.out.println(osf + "End");
+            return;
+        }
+
+        rootToLeaf(node.left, osf);
+        rootToLeaf(node.right, osf);
+    }
+
 }

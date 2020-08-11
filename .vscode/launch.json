@@ -1,0 +1,517 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-arraylist<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arraylist",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-arraydemo<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.arraydemo",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-maxvalue<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.maxvalue",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-minvalueinarray<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.minvalueinarray",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-reverse_array<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.reverse_array",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-binarysearch<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.searching.binarysearch",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-linearsearch<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.searching.linearsearch",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-bubblesort<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.sorting.bubblesort",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-insertionsort<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.sorting.insertionsort",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-selectionsort<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.sorting.selectionsort",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-swapvalueinarray<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "arrays.swapvalueinarray",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-binarytodecimal<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "binarytodecimal",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-btclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "binarytree.btclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-bstclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "bst.bstclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-charinstring<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "charinstring",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PersonClient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "classes.PersonClient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StudentClient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "classes.StudentClient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-clientPA_CA<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "classes.clientPA_CA",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-clientforP_C<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "classes.clientforP_C",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-cyclic_reverse<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "cyclic_reverse",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-decimaltobinary<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "decimaltobinary",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-dynamicqueueclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "dynamicqueue.dynamicqueueclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-dynamicstackclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "dynamicstack.dynamicstackclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-f_to_c<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "f_to_c",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-factorial<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-fibbonaci<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "fibbonaci",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-funwithfunction<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "funwithfunction",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-hackerearth<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "hackerearth",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-krotate<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "krotate",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-largestof3num<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "largestof3num",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-llclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "linkedlist.llclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no_of_times_a_digit<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "no_of_times_a_digit",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-nthfibo<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "nthfibo",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-palindrome<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-primeno<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "primeno",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ques1<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "ques1",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ques2<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "ques2",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-quaclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "queue.quaclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-countMPWD<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.countMPWD",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-countNQueens<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.countNQueens",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-countmazepath<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.countmazepath",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-getMPWD<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.getMPWD",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-getmazepath<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.getmazepath",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-printMP<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.printMP",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-printMPWD<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.backtracking.printMPWD",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-factorial<code_practice_bab76040>(1)",
+            "request": "launch",
+            "mainClass": "recursion.factorial",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-fibo<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.fibo",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-firstandlastindex<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.firstandlastindex",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-isSorted<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.isSorted",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-pd_pi<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.pd_pi",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-power<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.power",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-getss<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "recursion.stringoperations.getss",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-reverseclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "reverselinkedlist.reverseclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-reverseno<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "reverseno",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-btclient<code_practice_bab76040>(1)",
+            "request": "launch",
+            "mainClass": "selfpractice.btclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-simpleintrest<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "simpleintrest",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SUAclient<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "stack.SUAclient",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-startandendtime<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "startandendtime",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-stringbuilder<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "stringbuilder",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-insertascii<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "strings.insertascii",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-printchar<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "strings.printchar",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-printsubstr<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "strings.printsubstr",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-stringsdemo<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "strings.stringsdemo",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-sumofn<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "sumofn",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-demo<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "twoDarrays.demo",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-spiralprint<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "twoDarrays.spiralprint",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-waveprint<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "twoDarrays.waveprint",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-wordinstring<code_practice_bab76040>",
+            "request": "launch",
+            "mainClass": "wordinstring",
+            "projectName": "code_practice_bab76040"
+        }
+    ]
+}

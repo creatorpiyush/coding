@@ -19,6 +19,8 @@ public class bstclient {
 
         bst.remove(10);
         bst.display();
+
+        bst.rootToLeaf();
     }
 
 }
