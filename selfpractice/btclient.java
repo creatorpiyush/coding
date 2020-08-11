@@ -21,6 +21,10 @@ public class btclient {
 
         tree.mirror();
         tree.display();
+
+        tree.preOrder();
+        System.out.println();
+        tree.inOrder();
     }
 
 }

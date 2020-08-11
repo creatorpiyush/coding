@@ -183,4 +183,30 @@ public class bt {
         this.mirror(node.right);
     }
 
+    public void preOrder() {
+        this.preOrder(this.root);
+    }
+
+    private void preOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        System.out.print(node.data + " ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+
+    public void inOrder() {
+        this.inOrder(this.root);
+    }
+
+    private void inOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        inOrder(node.left);
+        System.out.print(node.data + " ");
+        inOrder(node.right);
+    }
+
 }
