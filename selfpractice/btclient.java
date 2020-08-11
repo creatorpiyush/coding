@@ -34,6 +34,8 @@ public class btclient {
         System.out.println(tree.isBST());
 
         System.out.println(tree.diameter());
+
+        tree.rootToLeaf();
     }
 
 }
