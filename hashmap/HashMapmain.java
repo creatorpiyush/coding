@@ -47,6 +47,27 @@ public class HashMapmain {
             System.out.println(entry.getKey() + "=>" + entry.getValue());
         }
 
+        int[] one = { 3, 1, 5, 7 };
+        int[] two = { 1, 5, 3, 4, 6 };
+        System.out.println(getIntersection(one, two));
+
+    }
+
+    public static ArrayList<Integer> getIntersection(int[] one, int[] two) {
+        ArrayList<Integer> list = new ArrayList<>();
+        HashMap<Integer, Boolean> map = new HashMap<>();
+        for (int i = 0; i < one.length; i++) {
+            map.put(one[i], false);
+        }
+
+        for (int i = 0; i < two.length; i++) {
+            if (map.containsKey(two[i])) {
+                list.add(two[i]);
+            }
+        }
+
+        return list;
+
     }
 
 }
