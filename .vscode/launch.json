@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "generics.Client",
+            "projectName": "code_practice_bab76040"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",
