@@ -33,6 +33,19 @@ public class Client {
         System.out.println(pairstr.one);
         System.out.println(pairstr.two);
 
+        Pair2<Integer, String> pairintstr = new Pair2<>();
+        pairintstr.one = 10;
+        pairintstr.two = "Piyush";
+
+        System.out.println(pairintstr.one);
+        System.out.println(pairintstr.two);
+
+        Pair2<String, String> pair2str = new Pair2<>();
+        pair2str.one = "Piyush";
+        pair2str.two = "Anand";
+
+        System.out.println(pair2str.one);
+        System.out.println(pair2str.two);
     }
 
 }
