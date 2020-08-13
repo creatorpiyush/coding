@@ -47,6 +47,7 @@ public class HashMapmain {
             System.out.println(entry.getKey() + "=>" + entry.getValue());
         }
 
+        System.out.println("**** get Intersection of 2 arrays ****");
         int[] one = { 3, 1, 5, 7 };
         int[] two = { 1, 5, 3, 4, 6 };
         System.out.println(getIntersection(one, two));
