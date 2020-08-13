@@ -14,6 +14,25 @@ public class Client {
 
         // Integer twodata = (Integer) rawpair.two;
         // System.out.println(twodata);
+
+        Pair<Integer> pairint = new Pair<>();
+        pairint.one = 1;
+        // pair.one = "SMS"; // ! not possible
+        pairint.two = 2;
+
+        Integer one = pairint.one;
+        System.out.println(one);
+
+        System.out.println(pairint.two);
+
+        Pair<String> pairstr = new Pair<>();
+        pairstr.one = "one";
+        // pairstr.two = 2; // ! not possible
+        pairstr.two = "two";
+
+        System.out.println(pairstr.one);
+        System.out.println(pairstr.two);
+
     }
 
 }
