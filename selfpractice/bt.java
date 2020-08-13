@@ -270,7 +270,7 @@ public class bt {
         }
 
         osf = osf + node.data + ", ";
-        if (node.left == null && node.left == null) {
+        if (node.left == null && node.right == null) {
             System.out.println(osf + "End");
             return;
         }
