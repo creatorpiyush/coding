@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - splithouses",
+            "request": "launch",
+            "mainClass": "splithouses",
+            "projectName": "code_practice_bab76040"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - togglestring",
             "request": "launch",
             "mainClass": "togglestring",
