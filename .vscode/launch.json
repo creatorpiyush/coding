@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - no_of_times_a_digit",
+            "request": "launch",
+            "mainClass": "functions.no_of_times_a_digit",
+            "projectName": "code_practice_92bf2af6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - arraylist",
+            "request": "launch",
+            "mainClass": "arraylist",
+            "projectName": "code_practice_92bf2af6"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - splithouses",
             "request": "launch",
             "mainClass": "splithouses",
