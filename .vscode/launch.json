@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - htclient",
+            "request": "launch",
+            "mainClass": "hashtable.htclient",
+            "projectName": "code_practice_92bf2af6"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - no_of_times_a_digit",
             "request": "launch",
             "mainClass": "functions.no_of_times_a_digit",
