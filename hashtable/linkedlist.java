@@ -1,19 +1,19 @@
 package hashtable;
 
-public class linkedlist {
+public class linkedlist<T> {
 
-    public class Node {
-        public int data;
-        public Node next;
+    private class Node {
+        T data;
+        Node next;
 
-        Node(int data, Node next) {
+        Node(T data, Node next) {
             this.data = data;
             this.next = next;
         }
     }
 
-    public Node head;
-    public Node tail;
+    Node head;
+    Node tail;
     int size;
 
     public linkedlist() {
@@ -30,7 +30,7 @@ public class linkedlist {
         return this.size() == 0;
     }
 
-    public void addFirst(int data) {
+    public void addFirst(T data) {
         Node node = new Node(data, this.head);
         this.head = node;
         if (this.isEmpty()) {
@@ -39,7 +39,7 @@ public class linkedlist {
         this.size++;
     }
 
-    public void addLast(int data) {
+    public void addLast(T data) {
         Node node = new Node(data, null);
         if (this.isEmpty()) {
             this.head = node;
@@ -51,39 +51,36 @@ public class linkedlist {
         this.size++;
     }
 
-    public Node getNodeAt(int index) throws Exception {
+    private Node getNodeAt(int index) throws Exception {
         if (index < 0 || index >= this.size) {
-            throw new Exception("Invalid Index");
+            throw new Exception("Invalid value");
         }
-
         int counter = 0;
         Node temp = this.head;
         while (counter < index) {
             temp = temp.next;
             counter++;
         }
-
         return temp;
     }
 
-    public void addAt(int index, int data) throws Exception {
+    public void addAt(T data, int index) throws Exception {
         if (index < 0 || index > this.size) {
-            throw new Exception("Invalid Index");
+            throw new Exception("Invalid Value");
         }
-        if (index == 0)
+        if (index == 0) {
             this.addFirst(data);
-        else if (index == this.size)
+        } else if (index == this.size) {
             this.addLast(data);
-        else {
+        } else {
             Node temp = this.getNodeAt(index - 1);
             Node node = new Node(data, temp.next);
             temp.next = node;
             this.size++;
         }
-
     }
 
-    public int getFirst() throws Exception {
+    public T getFirst() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
@@ -91,7 +88,7 @@ public class linkedlist {
         return this.head.data;
     }
 
-    public int getLast() throws Exception {
+    public T getLast() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
@@ -99,38 +96,35 @@ public class linkedlist {
         return this.tail.data;
     }
 
-    public int getAt(int index) throws Exception {
+    public T getAt(int index) throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
+
         if (index < 0 || index >= this.size) {
             throw new Exception("Invalid Index");
         }
 
         return this.getNodeAt(index).data;
-
     }
 
-    public int removeFirst() throws Exception {
-
+    public T removeFirst() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
 
         Node rv = this.head;
-
         if (this.size() == 1) {
             this.head = null;
             this.tail = null;
         } else {
             this.head = this.head.next;
         }
-
         this.size--;
         return rv.data;
     }
 
-    public int removeLast() throws Exception {
+    public T removeLast() throws Exception {
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
@@ -144,17 +138,14 @@ public class linkedlist {
             temp.next = null;
             this.tail = temp;
         }
-
         this.size--;
         return rv.data;
     }
 
-    public int removeAt(int index) throws Exception {
-
+    public T removeAt(int index) throws Exception {
         if (index < 0 || index >= this.size) {
-            throw new Exception("Invalid index");
+            throw new Exception("Invalid Index");
         }
-
         if (this.isEmpty()) {
             throw new Exception("List is Empty");
         }
@@ -170,16 +161,27 @@ public class linkedlist {
             this.size--;
             return rv.data;
         }
-
     }
 
-    public void display() {
+    public int find(T data) {
+        int index = 0;
+        for (Node temp = this.head; temp != null; temp = temp.next) {
+            if (temp.data.equals(data)) {
+                return index;
+            }
+            index++;
+        }
+        return -1;
+    }
+
+    public String toString() {
+        String str = "";
         Node temp = this.head;
         while (temp != null) {
-            System.out.print(temp.data + "=>");
+            str = str + temp.data + "=>";
             temp = temp.next;
         }
-        System.out.println("End");
+        str = str + "End";
+        return str;
     }
-
 }
